@@ -1,0 +1,23 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio for Chad Plourde",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cdplourde/Portfolio.git"
+  },
+  "author": "Chad P",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cdplourde/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Cdplourde/Portfolio#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
