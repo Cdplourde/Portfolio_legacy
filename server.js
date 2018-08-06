@@ -6,7 +6,7 @@ var path = require("path");
 var app = express();
 var PORT = process.env.PORT || 3000;
 
-// middleware & express setup
+// express middleware setup
 app.use(express.static("public"));
 
 // start server
@@ -27,7 +27,7 @@ app.get("/projects", function(req, res) {
 app.get("/contact", function(req, res) {
   res.sendFile(path.join(__dirname, "./public/index.html"))
 })
-
+// Error page
 app.get("*", function(req, res) {
   res.send(":(");
 })
