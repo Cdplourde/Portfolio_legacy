@@ -5,6 +5,7 @@ const contactBtnCache = document.querySelector(".contact-btn");
 const aboutCache = document.querySelector(".about");
 const projectsCache = document.querySelector(".projects");
 const contactCache = document.querySelector(".contact");
+const homeCache = document.querySelector(".home");
 
 // TODO: refactor these into one function
 aboutBtnCache.addEventListener("click", function() {
@@ -46,16 +47,25 @@ function renderMainContent(event) {
     aboutCache.style.display = "block";
     projectsCache.style.display = "none";
     contactCache.style.display = "none";
+    homeCache.style.display = "none";
   }
   else if (windowLocation === "projects") {
     projectsCache.style.display = "block";
     aboutCache.style.display = "none";
     contactCache.style.display = "none";
+    homeCache.style.display = "none";
   }
   else if (windowLocation === "contact") {
     contactCache.style.display = "block";
     aboutCache.style.display = "none";
     projectsCache.style.display = "none";
+    homeCache.style.display = "none";
+  }
+  // TODO: update location for live server
+  else if (windowLocation === "localhost:3000") {
+    contactCache.style.display = "none";
+    aboutCache.style.display = "none";
+    projectsCache.style.display = "none";
+    homeCache.style.display = "block";
   }
 }
-
