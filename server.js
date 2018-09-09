@@ -1,6 +1,5 @@
 var express = require("express");
 var path = require("path");
-// var bodyParser = require("body-parser");
 
 // initialize express
 var app = express();
@@ -15,19 +14,6 @@ app.listen(PORT, function() {
 });
 
 // routes
-app.get("/", function(req, res) {
-  res.json(":)");
-})
-app.get("/about", function(req, res) {
-  res.sendFile(path.join(__dirname, "./public/index.html"))
-})
-app.get("/projects", function(req, res) {
-  res.sendFile(path.join(__dirname, "./public/index.html"))
-})
-app.get("/contact", function(req, res) {
-  res.sendFile(path.join(__dirname, "./public/index.html"))
-})
-// Error page
 app.get("*", function(req, res) {
-  res.send(":(");
-})
+  res.sendFile(path.join(__dirname, "./public/index.html"))
+});

@@ -64,9 +64,61 @@ nav {
   display: none;
 }
 
-.projects, .contact, .about {
+.projects, .contact, .about, .no-route {
   display: none;
 }
+
+/* Projects section */
+
+.projects-list-nav-item {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: #999;
+  border-radius: 15px;
+}
+
+.projects-list-nav-item:hover {
+  transition: background-color 0.9s ease-out;
+  background-color: #2F4F4F;
+  cursor: pointer;
+}
+
+.projects-list h2 {
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.previous-btn, .next-btn {
+  display: inline-block;
+  position: relative;
+  bottom: 130px;
+  font-size: 40px;
+}
+
+.previous-btn {
+  right: 40px;
+}
+
+.next-btn {
+  left: 40px;
+}
+
+.previous-btn:hover, .next-btn:hover {
+  cursor: pointer;
+}
+
+.projects-list {
+  display: inline-block;
+}
+
+.projects-list li:not(:first-of-type) {
+  display: none;
+}
+
+
+/* Footer */
 
 footer {
   position: absolute;
@@ -78,6 +130,8 @@ footer {
   padding: 10px 0 10px 0;
   font-size: 14px;
 }
+
+/* Media queries */
 
 @media (max-width: 800px) {
   .container {
